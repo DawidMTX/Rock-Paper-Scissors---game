@@ -344,6 +344,9 @@ main {
         .shadow {
             box-shadow: 0 0 100px white;
             animation: shadow 2s linear infinite;
+            @media screen and(min-width:1000px) {
+                animation: shadowForDesktop 2s linear infinite;
+            }
         }
 
         .choice {
@@ -635,8 +638,8 @@ main {
     }
 
 }
-@media screen and(min-width:1200px){
-    @keyframes shadow {
+
+    @keyframes shadowForDesktop {
         0% {
             box-shadow: 0 0 0 white;
         }
@@ -650,4 +653,3 @@ main {
         }
     
     }
-}

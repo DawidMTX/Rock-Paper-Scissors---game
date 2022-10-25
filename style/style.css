@@ -1379,23 +1379,4 @@ main {
   }
 }
 
-@media screen and(min-width:1200px) {
-  @keyframes shadow {
-    0% {
-      -webkit-box-shadow: 0 0 0 white;
-      box-shadow: 0 0 0 white;
-    }
-
-    50% {
-      -webkit-box-shadow: 0 0 200px white;
-      box-shadow: 0 0 200px white;
-    }
-
-    100% {
-      -webkit-box-shadow: 0 0 0 white;
-      box-shadow: 0 0 0 white;
-    }
-  }
-}
-
 /*# sourceMappingURL=style.css.map */
