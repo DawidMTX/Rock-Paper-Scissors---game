@@ -1,10 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@600;700&display=swap");
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
@@ -23,11 +24,11 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .title {
@@ -35,8 +36,8 @@ main {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   width: 84vw;
   max-width: 500px;
   min-width: 260px;
@@ -46,6 +47,7 @@ main {
   border: 3px solid hsl(217deg, 16%, 45%);
   border-radius: 8px;
 }
+
 @media screen and (min-width: 600px) {
   .title {
     max-width: 550px;
@@ -53,6 +55,7 @@ main {
     margin-top: 45px;
   }
 }
+
 @media screen and (min-width: 1000px) {
   .title {
     max-width: 700px;
@@ -60,13 +63,16 @@ main {
     margin-top: 45px;
   }
 }
+
 .title .title__name {
   width: 50%;
   padding: 10px;
 }
+
 .title .title__name img {
   height: 100%;
 }
+
 .title .title__score {
   background-color: white;
   border: 1px solid black;
@@ -75,6 +81,7 @@ main {
   padding: 10px;
   font-family: "Barlow Semi Condensed", sans-serif;
 }
+
 @media screen and (min-width: 600px) {
   .title .title__score {
     width: 130px;
@@ -82,6 +89,7 @@ main {
     margin: 6px 12px;
   }
 }
+
 @media screen and (min-width: 1000px) {
   .title .title__score {
     width: 150px;
@@ -89,33 +97,39 @@ main {
     margin: 6px 12px;
   }
 }
+
 .title .title__score h3 {
   color: hsl(229deg, 64%, 46%);
   text-transform: uppercase;
   font-size: 0.7em;
   text-align: center;
 }
+
 @media screen and (min-width: 600px) {
   .title .title__score h3 {
     font-size: 1em;
   }
 }
+
 @media screen and (min-width: 1000px) {
   .title .title__score h3 {
     font-size: 1.2em;
   }
 }
+
 .title .title__score .score {
   color: hsl(229deg, 25%, 31%);
   font-size: 2.7em;
   line-height: 2.7rem;
   text-align: center;
 }
+
 @media screen and (min-width: 600px) {
   .title .title__score .score {
     font-size: 3em;
   }
 }
+
 @media screen and (min-width: 1000px) {
   .title .title__score .score {
     font-size: 3.7em;
@@ -128,6 +142,7 @@ main {
   position: relative;
   top: 0;
 }
+
 .hands .hands__images {
   width: 82%;
   height: 275px;
@@ -137,23 +152,27 @@ main {
   top: 30%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
+
 @media screen and (min-width: 400px) {
   .hands .hands__images {
     height: 300px;
   }
 }
+
 @media screen and (min-width: 500px) {
   .hands .hands__images {
     height: 350px;
   }
 }
+
 @media screen and (min-width: 800px) {
   .hands .hands__images {
     height: 350px;
   }
 }
+
 @media screen and (min-width: 1000px) {
   .hands .hands__images {
     margin-top: 80px;
@@ -161,22 +180,26 @@ main {
     max-width: 480px;
   }
 }
+
 .hands .hands__images--hide {
   display: none;
 }
+
 .hands .hands__images .tringle {
   height: 100%;
   position: relative;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   margin: 50px 0;
 }
+
 .hands .hands__images .tringle .tringle__image {
   width: 75%;
 }
+
 .hands .hands__images .paper {
   border: none;
   position: absolute;
@@ -188,37 +211,41 @@ main {
   top: 0;
   left: 0;
   -webkit-box-shadow: 0 5px hsl(230deg, 54%, 48%);
-          box-shadow: 0 5px hsl(230deg, 54%, 48%);
+  box-shadow: 0 5px hsl(230deg, 54%, 48%);
 }
+
 .hands .hands__images .paper .background {
   position: relative;
   width: calc(125px - 25%);
   height: calc(125px - 25%);
   background-color: white;
   -webkit-box-shadow: inset 0 4px rgb(217, 217, 217);
-          box-shadow: inset 0 4px rgb(217, 217, 217);
+  box-shadow: inset 0 4px rgb(217, 217, 217);
   border-radius: 50%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
+
 .hands .hands__images .paper .background .image {
   position: relative;
   width: calc(125px - 85%);
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
+
 .hands .hands__images .paper:hover {
   -webkit-transform: scale(0.95);
-          transform: scale(0.95);
+  transform: scale(0.95);
   top: 3px;
   -webkit-box-shadow: 0 3px hsl(230deg, 54%, 48%);
-          box-shadow: 0 3px hsl(230deg, 54%, 48%);
+  box-shadow: 0 3px hsl(230deg, 54%, 48%);
   cursor: pointer;
 }
+
 @media screen and (min-width: 450px) {
   .hands .hands__images .paper {
     border: none;
@@ -227,28 +254,31 @@ main {
     height: 140px;
     border-radius: 50%;
   }
+
   .hands .hands__images .paper .background {
     position: relative;
     width: calc(140px - 25%);
     height: calc(140px - 25%);
     background-color: white;
     -webkit-box-shadow: inset 0 4px rgb(217, 217, 217);
-            box-shadow: inset 0 4px rgb(217, 217, 217);
+    box-shadow: inset 0 4px rgb(217, 217, 217);
     border-radius: 50%;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
+
   .hands .hands__images .paper .background .image {
     position: relative;
     width: calc(140px - 85%);
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
+
 @media screen and (min-width: 600px) {
   .hands .hands__images .paper {
     border: none;
@@ -257,28 +287,31 @@ main {
     height: 170px;
     border-radius: 50%;
   }
+
   .hands .hands__images .paper .background {
     position: relative;
     width: calc(170px - 25%);
     height: calc(170px - 25%);
     background-color: white;
     -webkit-box-shadow: inset 0 4px rgb(217, 217, 217);
-            box-shadow: inset 0 4px rgb(217, 217, 217);
+    box-shadow: inset 0 4px rgb(217, 217, 217);
     border-radius: 50%;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
+
   .hands .hands__images .paper .background .image {
     position: relative;
     width: calc(170px - 85%);
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
+
 @media screen and (min-width: 1000px) {
   .hands .hands__images .paper {
     border: none;
@@ -287,28 +320,31 @@ main {
     height: 200px;
     border-radius: 50%;
   }
+
   .hands .hands__images .paper .background {
     position: relative;
     width: calc(200px - 25%);
     height: calc(200px - 25%);
     background-color: white;
     -webkit-box-shadow: inset 0 4px rgb(217, 217, 217);
-            box-shadow: inset 0 4px rgb(217, 217, 217);
+    box-shadow: inset 0 4px rgb(217, 217, 217);
     border-radius: 50%;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
+
   .hands .hands__images .paper .background .image {
     position: relative;
     width: calc(200px - 85%);
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
+
 .hands .hands__images .scissors {
   border: none;
   position: absolute;
@@ -320,38 +356,42 @@ main {
   background: -webkit-gradient(linear, left top, left bottom, from(hsl(39deg, 89%, 49%)), to(hsl(40deg, 84%, 53%)));
   background: linear-gradient(hsl(39deg, 89%, 49%), hsl(40deg, 84%, 53%));
   -webkit-box-shadow: 0 5px hsl(39deg, 89%, 39%);
-          box-shadow: 0 5px hsl(39deg, 89%, 39%);
+  box-shadow: 0 5px hsl(39deg, 89%, 39%);
   z-index: 1 !important;
 }
+
 .hands .hands__images .scissors .background {
   position: relative;
   width: calc(125px - 25%);
   height: calc(125px - 25%);
   background-color: white;
   -webkit-box-shadow: inset 0 4px rgb(217, 217, 217);
-          box-shadow: inset 0 4px rgb(217, 217, 217);
+  box-shadow: inset 0 4px rgb(217, 217, 217);
   border-radius: 50%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
+
 .hands .hands__images .scissors .background .image {
   position: relative;
   width: calc(125px - 85%);
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
+
 .hands .hands__images .scissors:hover {
   -webkit-transform: scale(0.95);
-          transform: scale(0.95);
+  transform: scale(0.95);
   top: 3px;
   -webkit-box-shadow: 0 3px hsl(39deg, 89%, 39%);
-          box-shadow: 0 3px hsl(39deg, 89%, 39%);
+  box-shadow: 0 3px hsl(39deg, 89%, 39%);
   cursor: pointer;
 }
+
 @media screen and (min-width: 450px) {
   .hands .hands__images .scissors {
     border: none;
@@ -360,28 +400,31 @@ main {
     height: 140px;
     border-radius: 50%;
   }
+
   .hands .hands__images .scissors .background {
     position: relative;
     width: calc(140px - 25%);
     height: calc(140px - 25%);
     background-color: white;
     -webkit-box-shadow: inset 0 4px rgb(217, 217, 217);
-            box-shadow: inset 0 4px rgb(217, 217, 217);
+    box-shadow: inset 0 4px rgb(217, 217, 217);
     border-radius: 50%;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
+
   .hands .hands__images .scissors .background .image {
     position: relative;
     width: calc(140px - 85%);
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
+
 @media screen and (min-width: 600px) {
   .hands .hands__images .scissors {
     border: none;
@@ -390,28 +433,31 @@ main {
     height: 170px;
     border-radius: 50%;
   }
+
   .hands .hands__images .scissors .background {
     position: relative;
     width: calc(170px - 25%);
     height: calc(170px - 25%);
     background-color: white;
     -webkit-box-shadow: inset 0 4px rgb(217, 217, 217);
-            box-shadow: inset 0 4px rgb(217, 217, 217);
+    box-shadow: inset 0 4px rgb(217, 217, 217);
     border-radius: 50%;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
+
   .hands .hands__images .scissors .background .image {
     position: relative;
     width: calc(170px - 85%);
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
+
 @media screen and (min-width: 1000px) {
   .hands .hands__images .scissors {
     border: none;
@@ -420,28 +466,31 @@ main {
     height: 200px;
     border-radius: 50%;
   }
+
   .hands .hands__images .scissors .background {
     position: relative;
     width: calc(200px - 25%);
     height: calc(200px - 25%);
     background-color: white;
     -webkit-box-shadow: inset 0 4px rgb(217, 217, 217);
-            box-shadow: inset 0 4px rgb(217, 217, 217);
+    box-shadow: inset 0 4px rgb(217, 217, 217);
     border-radius: 50%;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
+
   .hands .hands__images .scissors .background .image {
     position: relative;
     width: calc(200px - 85%);
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
+
 .hands .hands__images .rock {
   border: none;
   position: absolute;
@@ -451,41 +500,45 @@ main {
   bottom: 0;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
   background: -webkit-gradient(linear, left top, left bottom, from(hsl(349deg, 71%, 52%)), to(hsl(349deg, 70%, 56%)));
   background: linear-gradient(hsl(349deg, 71%, 52%), hsl(349deg, 70%, 56%));
   -webkit-box-shadow: 0 5px hsl(349deg, 65%, 40%);
-          box-shadow: 0 5px hsl(349deg, 65%, 40%);
+  box-shadow: 0 5px hsl(349deg, 65%, 40%);
 }
+
 .hands .hands__images .rock .background {
   position: relative;
   width: calc(125px - 25%);
   height: calc(125px - 25%);
   background-color: white;
   -webkit-box-shadow: inset 0 4px rgb(217, 217, 217);
-          box-shadow: inset 0 4px rgb(217, 217, 217);
+  box-shadow: inset 0 4px rgb(217, 217, 217);
   border-radius: 50%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
+
 .hands .hands__images .rock .background .image {
   position: relative;
   width: calc(125px - 85%);
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
+
 .hands .hands__images .rock:hover {
   -webkit-transform: translateX(-50%), scaleY(0.95);
-          transform: translateX(-50%), scaleY(0.95);
+  transform: translateX(-50%), scaleY(0.95);
   bottom: -3px;
   -webkit-box-shadow: 0 3px hsl(349deg, 65%, 40%);
-          box-shadow: 0 3px hsl(349deg, 65%, 40%);
+  box-shadow: 0 3px hsl(349deg, 65%, 40%);
   cursor: pointer;
 }
+
 @media screen and (min-width: 450px) {
   .hands .hands__images .rock {
     border: none;
@@ -494,28 +547,31 @@ main {
     height: 140px;
     border-radius: 50%;
   }
+
   .hands .hands__images .rock .background {
     position: relative;
     width: calc(140px - 25%);
     height: calc(140px - 25%);
     background-color: white;
     -webkit-box-shadow: inset 0 4px rgb(217, 217, 217);
-            box-shadow: inset 0 4px rgb(217, 217, 217);
+    box-shadow: inset 0 4px rgb(217, 217, 217);
     border-radius: 50%;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
+
   .hands .hands__images .rock .background .image {
     position: relative;
     width: calc(140px - 85%);
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
+
 @media screen and (min-width: 600px) {
   .hands .hands__images .rock {
     border: none;
@@ -524,28 +580,31 @@ main {
     height: 170px;
     border-radius: 50%;
   }
+
   .hands .hands__images .rock .background {
     position: relative;
     width: calc(170px - 25%);
     height: calc(170px - 25%);
     background-color: white;
     -webkit-box-shadow: inset 0 4px rgb(217, 217, 217);
-            box-shadow: inset 0 4px rgb(217, 217, 217);
+    box-shadow: inset 0 4px rgb(217, 217, 217);
     border-radius: 50%;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
+
   .hands .hands__images .rock .background .image {
     position: relative;
     width: calc(170px - 85%);
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
+
 @media screen and (min-width: 1000px) {
   .hands .hands__images .rock {
     border: none;
@@ -554,104 +613,116 @@ main {
     height: 200px;
     border-radius: 50%;
   }
+
   .hands .hands__images .rock .background {
     position: relative;
     width: calc(200px - 25%);
     height: calc(200px - 25%);
     background-color: white;
     -webkit-box-shadow: inset 0 4px rgb(217, 217, 217);
-            box-shadow: inset 0 4px rgb(217, 217, 217);
+    box-shadow: inset 0 4px rgb(217, 217, 217);
     border-radius: 50%;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
+
   .hands .hands__images .rock .background .image {
     position: relative;
     width: calc(200px - 85%);
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
+
 .hands .hands__selected {
   width: 95%;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: 8px;
   position: absolute;
   left: 50%;
   -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  transform: translateX(-50%);
 }
+
 @media screen and (min-width: 600px) {
   .hands .hands__selected {
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
     top: 20%;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .hands .hands__selected {
     -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
+    flex-wrap: nowrap;
     width: 65%;
     height: 500px;
     top: 0;
   }
 }
+
 .hands .hands__selected--hide {
   display: none;
 }
+
 .hands .hands__selected .player-choice {
   width: 50%;
   -webkit-box-ordinal-group: 1;
-      -ms-flex-order: 0;
-          order: 0;
+  -ms-flex-order: 0;
+  order: 0;
 }
+
 .hands .hands__selected .computer-choice {
   width: 50%;
   -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -ms-flex-order: 1;
+  order: 1;
 }
+
 @media screen and (min-width: 600px) {
   .hands .hands__selected .computer-choice {
     -webkit-box-ordinal-group: 4;
-        -ms-flex-order: 3;
-            order: 3;
+    -ms-flex-order: 3;
+    order: 3;
   }
 }
+
 .hands .hands__selected .result-game {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  -ms-flex-order: 2;
+  order: 2;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 100%;
   margin-top: 40px;
 }
+
 @media screen and (min-width: 1200px) {
   .hands .hands__selected .result-game {
     margin-top: 195px;
   }
 }
+
 .hands .hands__selected .result-game .result-game__name {
   color: white;
   font-family: "Barlow Semi Condensed", sans-serif;
@@ -660,6 +731,7 @@ main {
   text-transform: uppercase;
   text-align: center;
 }
+
 .hands .hands__selected .result-game .play-again {
   width: 225px;
   margin-top: 15px;
@@ -671,22 +743,26 @@ main {
   font-size: 18px;
   letter-spacing: 2px;
 }
+
 @media screen and (min-width: 1200px) {
   .hands .hands__selected .result-game .play-again {
     width: 228px;
   }
 }
+
 .hands .empty-place {
   width: 130px;
   height: 130px;
   margin: 10px auto;
 }
+
 @media screen and (min-width: 800px) {
   .hands .empty-place {
     width: 160px;
     height: 160px;
   }
 }
+
 @media screen and (min-width: 1200px) {
   .hands .empty-place {
     width: 180px;
@@ -694,12 +770,14 @@ main {
     margin: 190px auto;
   }
 }
+
 .hands .empty-place .shadow {
   -webkit-box-shadow: 0 0 100px white;
-          box-shadow: 0 0 100px white;
+  box-shadow: 0 0 100px white;
   -webkit-animation: shadow 2s linear infinite;
-          animation: shadow 2s linear infinite;
+  animation: shadow 2s linear infinite;
 }
+
 .hands .empty-place .choice {
   width: 110px;
   height: 110px;
@@ -707,12 +785,14 @@ main {
   background-color: hsl(214deg, 47%, 23%);
   margin: 0 auto;
 }
+
 @media screen and (min-width: 800px) {
   .hands .empty-place .choice {
     width: 140px;
     height: 140px;
   }
 }
+
 .hands .empty-place .choice .rock {
   border: none;
   position: absolute;
@@ -723,33 +803,36 @@ main {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background: -webkit-gradient(linear, left top, left bottom, from(hsl(349deg, 71%, 52%)), to(hsl(349deg, 70%, 56%)));
   background: linear-gradient(hsl(349deg, 71%, 52%), hsl(349deg, 70%, 56%));
   -webkit-box-shadow: 0 5px hsl(349deg, 65%, 40%);
-          box-shadow: 0 5px hsl(349deg, 65%, 40%);
+  box-shadow: 0 5px hsl(349deg, 65%, 40%);
 }
+
 .hands .empty-place .choice .rock .background {
   position: relative;
   width: calc(125px - 25%);
   height: calc(125px - 25%);
   background-color: white;
   -webkit-box-shadow: inset 0 4px rgb(217, 217, 217);
-          box-shadow: inset 0 4px rgb(217, 217, 217);
+  box-shadow: inset 0 4px rgb(217, 217, 217);
   border-radius: 50%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
+
 .hands .empty-place .choice .rock .background .image {
   position: relative;
   width: calc(125px - 85%);
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
+
 @media screen and (min-width: 800px) {
   .hands .empty-place .choice .rock {
     border: none;
@@ -761,30 +844,33 @@ main {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
+
   .hands .empty-place .choice .rock .background {
     position: relative;
     width: calc(180px - 25%);
     height: calc(180px - 25%);
     background-color: white;
     -webkit-box-shadow: inset 0 4px rgb(217, 217, 217);
-            box-shadow: inset 0 4px rgb(217, 217, 217);
+    box-shadow: inset 0 4px rgb(217, 217, 217);
     border-radius: 50%;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
+
   .hands .empty-place .choice .rock .background .image {
     position: relative;
     width: calc(180px - 85%);
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
+
 @media screen and (min-width: 1200px) {
   .hands .empty-place .choice .rock {
     border: none;
@@ -796,28 +882,31 @@ main {
     top: 50%;
     left: 50%;
   }
+
   .hands .empty-place .choice .rock .background {
     position: relative;
     width: calc(280px - 25%);
     height: calc(280px - 25%);
     background-color: white;
     -webkit-box-shadow: inset 0 4px rgb(217, 217, 217);
-            box-shadow: inset 0 4px rgb(217, 217, 217);
+    box-shadow: inset 0 4px rgb(217, 217, 217);
     border-radius: 50%;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
+
   .hands .empty-place .choice .rock .background .image {
     position: relative;
     width: calc(280px - 85%);
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
+
 .hands .empty-place .choice .scissors {
   border: none;
   position: absolute;
@@ -828,33 +917,36 @@ main {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background: -webkit-gradient(linear, left top, left bottom, from(hsl(39deg, 89%, 49%)), to(hsl(40deg, 84%, 53%)));
   background: linear-gradient(hsl(39deg, 89%, 49%), hsl(40deg, 84%, 53%));
   -webkit-box-shadow: 0 5px hsl(39deg, 89%, 39%);
-          box-shadow: 0 5px hsl(39deg, 89%, 39%);
+  box-shadow: 0 5px hsl(39deg, 89%, 39%);
 }
+
 .hands .empty-place .choice .scissors .background {
   position: relative;
   width: calc(125px - 25%);
   height: calc(125px - 25%);
   background-color: white;
   -webkit-box-shadow: inset 0 4px rgb(217, 217, 217);
-          box-shadow: inset 0 4px rgb(217, 217, 217);
+  box-shadow: inset 0 4px rgb(217, 217, 217);
   border-radius: 50%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
+
 .hands .empty-place .choice .scissors .background .image {
   position: relative;
   width: calc(125px - 85%);
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
+
 @media screen and (min-width: 800px) {
   .hands .empty-place .choice .scissors {
     border: none;
@@ -866,28 +958,31 @@ main {
     top: 50%;
     left: 50%;
   }
+
   .hands .empty-place .choice .scissors .background {
     position: relative;
     width: calc(180px - 25%);
     height: calc(180px - 25%);
     background-color: white;
     -webkit-box-shadow: inset 0 4px rgb(217, 217, 217);
-            box-shadow: inset 0 4px rgb(217, 217, 217);
+    box-shadow: inset 0 4px rgb(217, 217, 217);
     border-radius: 50%;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
+
   .hands .empty-place .choice .scissors .background .image {
     position: relative;
     width: calc(180px - 85%);
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
+
 @media screen and (min-width: 1200px) {
   .hands .empty-place .choice .scissors {
     border: none;
@@ -899,28 +994,31 @@ main {
     top: 50%;
     left: 50%;
   }
+
   .hands .empty-place .choice .scissors .background {
     position: relative;
     width: calc(280px - 25%);
     height: calc(280px - 25%);
     background-color: white;
     -webkit-box-shadow: inset 0 4px rgb(217, 217, 217);
-            box-shadow: inset 0 4px rgb(217, 217, 217);
+    box-shadow: inset 0 4px rgb(217, 217, 217);
     border-radius: 50%;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
+
   .hands .empty-place .choice .scissors .background .image {
     position: relative;
     width: calc(280px - 85%);
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
+
 .hands .empty-place .choice .paper {
   border: none;
   position: absolute;
@@ -931,33 +1029,36 @@ main {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   background: -webkit-gradient(linear, left top, left bottom, from(hsl(230deg, 89%, 62%)), to(hsl(230deg, 89%, 65%)));
   background: linear-gradient(hsl(230deg, 89%, 62%), hsl(230deg, 89%, 65%));
   -webkit-box-shadow: 0 5px hsl(230deg, 54%, 48%);
-          box-shadow: 0 5px hsl(230deg, 54%, 48%);
+  box-shadow: 0 5px hsl(230deg, 54%, 48%);
 }
+
 .hands .empty-place .choice .paper .background {
   position: relative;
   width: calc(125px - 25%);
   height: calc(125px - 25%);
   background-color: white;
   -webkit-box-shadow: inset 0 4px rgb(217, 217, 217);
-          box-shadow: inset 0 4px rgb(217, 217, 217);
+  box-shadow: inset 0 4px rgb(217, 217, 217);
   border-radius: 50%;
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
+
 .hands .empty-place .choice .paper .background .image {
   position: relative;
   width: calc(125px - 85%);
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
+
 @media screen and (min-width: 800px) {
   .hands .empty-place .choice .paper {
     border: none;
@@ -969,28 +1070,31 @@ main {
     top: 50%;
     left: 50%;
   }
+
   .hands .empty-place .choice .paper .background {
     position: relative;
     width: calc(180px - 25%);
     height: calc(180px - 25%);
     background-color: white;
     -webkit-box-shadow: inset 0 4px rgb(217, 217, 217);
-            box-shadow: inset 0 4px rgb(217, 217, 217);
+    box-shadow: inset 0 4px rgb(217, 217, 217);
     border-radius: 50%;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
+
   .hands .empty-place .choice .paper .background .image {
     position: relative;
     width: calc(180px - 85%);
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
+
 @media screen and (min-width: 1200px) {
   .hands .empty-place .choice .paper {
     border: none;
@@ -1002,28 +1106,31 @@ main {
     top: 50%;
     left: 50%;
   }
+
   .hands .empty-place .choice .paper .background {
     position: relative;
     width: calc(280px - 25%);
     height: calc(280px - 25%);
     background-color: white;
     -webkit-box-shadow: inset 0 4px rgb(217, 217, 217);
-            box-shadow: inset 0 4px rgb(217, 217, 217);
+    box-shadow: inset 0 4px rgb(217, 217, 217);
     border-radius: 50%;
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
+
   .hands .empty-place .choice .paper .background .image {
     position: relative;
     width: calc(280px - 85%);
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
   }
 }
+
 .hands .who-choice {
   color: white;
   font-family: "Barlow Semi Condensed", sans-serif;
@@ -1034,6 +1141,7 @@ main {
   text-align: center;
   padding: 30px 0 30px;
 }
+
 @media screen and (min-width: 1200px) {
   .hands .who-choice {
     position: relative;
@@ -1045,6 +1153,7 @@ main {
 .rules {
   text-align: center;
 }
+
 .rules__btn {
   background-color: transparent;
   border: 1px solid white;
@@ -1057,6 +1166,7 @@ main {
   font-size: 14px;
   font-family: "Barlow Semi Condensed", sans-serif;
 }
+
 @media screen and (min-width: 600px) {
   .rules__btn {
     position: absolute;
@@ -1065,11 +1175,13 @@ main {
     margin-bottom: 20px;
   }
 }
+
 .rules__btn:hover {
   cursor: pointer;
   -webkit-transform: scale(0.95);
-          transform: scale(0.95);
+  transform: scale(0.95);
 }
+
 .rules__hands {
   position: absolute;
   top: 0;
@@ -1082,11 +1194,12 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -ms-flex-pack: distribute;
-      justify-content: space-around;
+  justify-content: space-around;
 }
+
 @media screen and (min-width: 600px) {
   .rules__hands {
     width: 380px;
@@ -1094,17 +1207,19 @@ main {
     top: 50%;
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     border-radius: 8px;
     padding: 20px;
   }
 }
+
 .rules__hands-name {
   text-align: center;
   text-transform: uppercase;
   color: hsl(217deg, 16%, 45%);
   font-family: "Barlow Semi Condensed", sans-serif;
 }
+
 @media screen and (min-width: 600px) {
   .rules__hands-name {
     width: 45%;
@@ -1113,21 +1228,25 @@ main {
     top: 40px;
   }
 }
+
 .rules__hands-image {
   -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   width: 80%;
 }
+
 @media screen and (min-width: 600px) {
   .rules__hands-image {
     position: absolute;
     top: 105px;
   }
 }
+
 .rules__hands-close {
   border: none;
   background-color: transparent;
 }
+
 @media screen and (min-width: 600px) {
   .rules__hands-close {
     width: 45%;
@@ -1136,11 +1255,13 @@ main {
     right: -40px;
   }
 }
+
 .rules__hands-close:hover {
   cursor: pointer;
   -webkit-transform: scale(0.9);
-          transform: scale(0.9);
+  transform: scale(0.9);
 }
+
 .rules__hands--hide {
   display: none;
 }
@@ -1153,6 +1274,7 @@ main {
   width: 100vw;
   height: 100vh;
 }
+
 .game-over .game-over__background {
   position: relative;
   background-color: rgb(34, 52, 95);
@@ -1162,6 +1284,7 @@ main {
   width: 100vw;
   height: 100vh;
 }
+
 .game-over .game-over__contener {
   opacity: 1 !important;
   display: -webkit-box;
@@ -1169,14 +1292,14 @@ main {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   padding: 30px;
   position: absolute;
   background: -webkit-gradient(linear, left top, left bottom, from(rgb(146, 145, 145)), to(rgb(191, 190, 190)));
@@ -1187,17 +1310,20 @@ main {
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
   text-align: center;
   font-family: "Barlow Semi Condensed", sans-serif;
 }
+
 .game-over .game-over__contener .name h2 {
   padding-bottom: 10px;
   font-size: 2rem;
 }
+
 .game-over .game-over__contener .name h3 {
   font-size: 1.3rem;
 }
+
 .game-over .game-over__contener .yes-or-not-buttons button {
   width: 110px;
   height: 30px;
@@ -1208,10 +1334,11 @@ main {
   font-family: "Barlow Semi Condensed", sans-serif;
   text-transform: uppercase;
 }
+
 .game-over .game-over__contener .yes-or-not-buttons button:hover {
   cursor: pointer;
   -webkit-transform: scale(0.95);
-          transform: scale(0.95);
+  transform: scale(0.95);
 }
 
 .show {
@@ -1221,29 +1348,54 @@ main {
 @-webkit-keyframes shadow {
   0% {
     -webkit-box-shadow: 0 0 0 white;
-            box-shadow: 0 0 0 white;
+    box-shadow: 0 0 0 white;
   }
+
   50% {
     -webkit-box-shadow: 0 0 100px white;
-            box-shadow: 0 0 100px white;
+    box-shadow: 0 0 100px white;
   }
+
   100% {
     -webkit-box-shadow: 0 0 0 white;
-            box-shadow: 0 0 0 white;
+    box-shadow: 0 0 0 white;
   }
 }
 
 @keyframes shadow {
   0% {
     -webkit-box-shadow: 0 0 0 white;
-            box-shadow: 0 0 0 white;
+    box-shadow: 0 0 0 white;
   }
+
   50% {
     -webkit-box-shadow: 0 0 100px white;
-            box-shadow: 0 0 100px white;
+    box-shadow: 0 0 100px white;
   }
+
   100% {
     -webkit-box-shadow: 0 0 0 white;
-            box-shadow: 0 0 0 white;
+    box-shadow: 0 0 0 white;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media screen and(min-width:1200px) {
+  @keyframes shadow {
+    0% {
+      -webkit-box-shadow: 0 0 0 white;
+      box-shadow: 0 0 0 white;
+    }
+
+    50% {
+      -webkit-box-shadow: 0 0 200px white;
+      box-shadow: 0 0 200px white;
+    }
+
+    100% {
+      -webkit-box-shadow: 0 0 0 white;
+      box-shadow: 0 0 0 white;
+    }
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
