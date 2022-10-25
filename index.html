@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style/style.css">
+  <title>Rock, Paper, Scissors</title>
+
+</head>
+
+<body>
+  <main>
+    <section class="title">
+      <div class="title__name">
+        <img src="images/logo.svg">
+      </div>
+      <div class="title__score">
+        <h3>Score</h3>
+        <div class="score">10</div>
+      </div>
+    </section>
+
+    <section class="hands">
+      <div class="hands__images    ">
+        <div class="tringle"> <img class='tringle__image' src="images/bg-triangle.svg" alt="triangle"> </div>
+        <div class="paper buttons" id="paper">
+          <div class="background" id="paper"><img class="image" id="paper" src="images/icon-paper.svg "
+              alt="icon-paper"></div>
+        </div>
+        <div class="scissors buttons" id="scissors">
+          <div class="background" id="scissors"><img class="image" id="scissors" src="images/icon-scissors.svg"
+              alt="icon-scissors">
+          </div>
+        </div>
+        <div class="rock buttons" id="rock">
+          <div class="background" id="rock"><img class="image" id="rock" src="images/icon-rock.svg" alt="icon-rock">
+          </div>
+        </div>
+      </div>
+
+      <div class="hands__selected  hands__selected--hide">
+
+        <div class="player-choice">
+          <div class="empty-place ">
+            <div class="choice"></div>
+          </div>
+          <h2 class="who-choice"> You Picked</h2>
+        </div>
+
+        <div class="result-game">
+          <h1 class="result-game__name">...</h1>
+          <button class="play-again">play again</button>
+        </div>
+
+        <div class="computer-choice">
+          <div class="empty-place ">
+            <div class="choice computer"></div>
+          </div>
+          <h2 class="who-choice">The House Picked</h2>
+        </div>
+
+
+      </div>
+
+    </section>
+
+    <section class="rules">
+      <button class="rules__btn">Rules</button>
+      <div class="rules__hands rules__hands--hide">
+        <h1 class="rules__hands-name">rules</h1>
+        <img class="rules__hands-image" src="images/image-rules.svg" alt="image-rules">
+        <button class="rules__hands-close">
+          <img src="images/icon-close.svg" alt="icon-close">
+        </button>
+      </div>
+    </section>
+
+
+  </main>
+  <section class="game-over">
+    <div class="game-over__background"></div>
+    <div class="game-over__contener">
+      <div class="name">
+        <h2>Game over.</h2>
+        <h3>Do you want try again?</h3>
+      </div>
+      <div class="yes-or-not-buttons">
+        <button class="yes">Yes, of course</button>
+        <button class="no">No, thanks</button>
+      </div>
+
+    </div>
+  </section>
+
+  
+    <!-- Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Dawid Rogoza</a>. -->
+ 
+  <script src="app.js"></script>
+</body>
+
+</html>

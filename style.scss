@@ -1,0 +1,637 @@
+@use '/variables/_colors' as color;
+@use '/variables/_variables' as var;
+@import '/variables/_mixins';
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(color.$RadialGradient);
+    min-height: 700px;
+}
+
+main {
+    height: 100%;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.title {
+    display: flex;
+    justify-content: space-between;
+    width: 84vw;
+    max-width: 500px;
+    min-width: 260px;
+    height: 100px;
+    padding: 10px;
+    margin: 30px auto;
+    border: 3px solid color.$HeaderOutline;
+    border-radius: 8px;
+
+    @media screen and(min-width:600px) {
+        max-width: 550px;
+        height: 130px;
+        margin-top: 45px;
+    }
+
+    @media screen and(min-width:1000px) {
+        max-width: 700px;
+        height: 150px;
+        margin-top: 45px;
+    }
+
+    .title__name {
+        width: 50%;
+        padding: 10px;
+
+        & img {
+
+            height: 100%;
+        }
+    }
+
+    .title__score {
+        background-color: white;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 80px;
+        padding: 10px;
+        font-family: var.$BarlowSemiCondensed;
+
+        @media screen and(min-width:600px) {
+            width: 130px;
+            border-radius: 8px;
+            margin: 6px 12px;
+        }
+
+        @media screen and(min-width:1000px) {
+            width: 150px;
+            border-radius: 10px;
+            margin: 6px 12px;
+        }
+
+        & h3 {
+            color: color.$ScoreText;
+            text-transform: uppercase;
+            font-size: 0.7em;
+            text-align: center;
+
+            @media screen and(min-width:600px) {
+                font-size: 1em;
+            }
+
+            @media screen and(min-width:1000px) {
+                font-size: 1.2em;
+            }
+        }
+
+        .score {
+            color: color.$DarkText;
+            font-size: 2.7em;
+            line-height: 2.7rem;
+            text-align: center;
+
+            @media screen and(min-width:600px) {
+                font-size: 3em;
+            }
+
+            @media screen and(min-width:1000px) {
+                font-size: 3.7em;
+            }
+        }
+    }
+}
+
+
+.hands {
+    width: 100vw;
+    height: 100%;
+    position: relative;
+    top: 0;
+    .hands__images {
+        width: 82%;
+        height: 275px;
+        max-width: 450px;
+        min-width: 260px;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        @media screen and(min-width:400px) {
+            height: 300px;
+        }
+
+        @media screen and(min-width:500px) {
+            height: 350px;
+        }
+
+        @media screen and(min-width:800px) {
+            height: 350px;
+        }
+
+        @media screen and(min-width:1000px) {
+            margin-top: 80px;
+            height: 420px;
+            max-width: 480px;
+        }
+
+        &--hide {
+            display: none;
+        }
+
+        .tringle {
+            height: 100%;
+            position: relative;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            margin: 50px 0;
+
+            .tringle__image {
+                width: 75%;
+            }
+        }
+
+        .paper {
+            @include handView();
+            background: linear-gradient(color.$PaperGradient);
+            top: 0;
+            left: 0;
+            box-shadow: 0 5px hsl(230, 54%, 48%);
+
+            &:hover {
+                transform: scale(0.95);
+                top: 3px;
+                box-shadow: 0 3px hsl(230, 54%, 48%);
+                cursor: pointer;
+            }
+
+            @media screen and(min-width:450px) {
+                @include handView(140px)
+            }
+
+            @media screen and(min-width:600px) {
+                @include handView(170px)
+            }
+
+            @media screen and(min-width:1000px) {
+                @include handView(200px)
+            }
+        }
+
+        .scissors {
+            @include handView();
+            top: 0;
+            right: 0;
+            background: linear-gradient(color.$ScissorsGradient);
+            box-shadow: 0 5px hsl(39, 89%, 39%);
+            z-index: 1 !important;
+
+            &:hover {
+                transform: scale(0.95);
+                top: 3px;
+                box-shadow: 0 3px hsl(39, 89%, 39%);
+                cursor: pointer;
+            }
+
+            @media screen and(min-width:450px) {
+                @include handView(140px)
+            }
+
+            @media screen and(min-width:600px) {
+                @include handView(170px)
+            }
+
+            @media screen and(min-width:1000px) {
+                @include handView(200px)
+            }
+        }
+
+        .rock {
+            @include handView();
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            background: linear-gradient(color.$RockGradient);
+            box-shadow: 0 5px hsl(349, 65%, 40%);
+
+            &:hover {
+                transform: translateX(-50%), scaleY(0.95);
+                bottom: -3px;
+                box-shadow: 0 3px hsl(349, 65%, 40%);
+                cursor: pointer;
+            }
+
+            @media screen and(min-width:450px) {
+                @include handView(140px)
+            }
+
+            @media screen and(min-width:600px) {
+                @include handView(170px)
+            }
+
+            @media screen and(min-width:1000px) {
+                @include handView(200px)
+            }
+        }
+    }
+
+    .hands__selected {
+        width: 95%;
+        justify-content: space-between;
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 8px;
+        position: absolute;
+       left: 50%;
+       transform: translateX(-50%);
+        
+        @media screen and(min-width:600px) {
+            flex-wrap: nowrap;
+            top: 20%
+        }
+        @media screen and(min-width:1200px) {
+            flex-wrap: nowrap;
+            width: 65%;
+            height: 500px;
+            top: 0;
+        }
+
+        &--hide {
+            display: none;
+        }
+
+        .player-choice {
+            width: 50%;
+            order: 0;
+        }
+
+        .computer-choice {
+            width: 50%;
+            order: 1;
+
+            @media screen and(min-width: 600px) {
+                order: 3;
+            }
+        }
+
+        .result-game {
+            display: flex;
+            order: 2;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            margin-top: 40px;
+            @media screen and (min-width:1200px) {
+              
+                margin-top: 195px;
+            }
+            .result-game__name {
+                color: white;
+                font-family: var.$BarlowSemiCondensed;
+                font-weight: 700;
+                font-size: 55px;
+                text-transform: uppercase;
+                text-align: center;
+                
+            }
+
+            .play-again {
+                width: 225px;
+                margin-top: 15px;
+                border-radius: 8px;
+                padding: 14px 30px;
+                text-transform: uppercase;
+                font-family: var.$BarlowSemiCondensed;
+                color: color.$DarkText;
+                font-size: 18px;
+                letter-spacing: 2px;
+                @media screen and (min-width:1200px) {
+                    width:228px;
+                   
+                }
+            }
+        }
+    }
+
+
+    .empty-place {
+        width: 130px;
+        height: 130px;
+        margin: 10px auto;
+
+        @media screen and(min-width:800px) {
+            width: 160px;
+            height: 160px;
+        }
+        @media screen and(min-width:1200px) {
+            width: 180px;
+            height: 180px;
+            margin: 190px auto;
+        }
+
+        .shadow {
+            box-shadow: 0 0 100px white;
+            animation: shadow 2s linear infinite;
+        }
+
+        .choice {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            background-color: hsl(214, 47%, 23%);
+            margin: 0 auto;
+
+            @media screen and(min-width:800px) {
+                width: 140px;
+                height: 140px;
+            }
+
+            .rock {
+                @include handView();
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: linear-gradient(color.$RockGradient);
+                box-shadow: 0 5px hsl(349, 65%, 40%);
+
+                @media screen and(min-width:800px) {
+                    @include handView(180px);
+                    position: relative;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+                @media screen and(min-width:1200px) {
+                    @include handView(280px);
+                     position: relative;
+                    top: 50%;
+                    left: 50%;
+                }
+            }
+
+            .scissors {
+                @include handView();
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: linear-gradient(color.$ScissorsGradient);
+                box-shadow: 0 5px hsl(39, 89%, 39%);
+
+                @media screen and(min-width:800px) {
+                    @include handView(180px);
+                     position: relative;
+                    top: 50%;
+                    left: 50%;
+                }
+                @media screen and(min-width:1200px) {
+                    @include handView(280px);
+                     position: relative;
+                    top: 50%;
+                    left: 50%;
+                }
+            }
+
+            .paper {
+                @include handView();
+                position: relative;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: linear-gradient(color.$PaperGradient);
+                box-shadow: 0 5px hsl(230, 54%, 48%);
+
+                @media screen and(min-width:800px) {
+                    @include handView(180px);
+                     position: relative;
+                    top: 50%;
+                    left: 50%;
+                }
+                @media screen and(min-width:1200px) {
+                    @include handView(280px);
+                     position: relative;
+                    top: 50%;
+                    left: 50%;
+                }
+            }
+        }
+    }
+
+    .who-choice {
+        color: white;
+        font-family: var.$BarlowSemiCondensed;
+        font-weight: 600;
+        text-transform: uppercase;
+        font-size: 15px;
+        letter-spacing: 2px;
+        text-align: center;
+        padding: 30px 0 30px;
+        @media screen and(min-width: 1200px) {
+            position: relative;
+            top:-555px;
+            font-size: 25px;
+        }
+    }
+}
+
+.rules {
+    text-align: center;
+
+    &__btn {
+        background-color: transparent;
+        border: 1px solid white;
+        border-radius: 8px;
+        color: white;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        padding: 10px 40px;
+        margin-bottom: 55px;
+        font-size: 14px;
+        font-family: var.$BarlowSemiCondensed;
+
+        @media screen and (min-width: 600px) {
+            position: absolute;
+            bottom: 20px;
+            right: 40px;
+            margin-bottom: 20px;
+
+
+        }
+
+        &:hover {
+            cursor: pointer;
+            transform: scale(0.95);
+        }
+    }
+
+    &__hands {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: rgb(231, 229, 229);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        @media screen and (min-width: 600px) {
+            width: 380px;
+            height: 400px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 8px;
+            padding: 20px;
+        }
+
+        &-name {
+            text-align: center;
+            text-transform: uppercase;
+            color: color.$HeaderOutline;
+            font-family: var.$BarlowSemiCondensed;
+
+            @media screen and (min-width: 600px) {
+                width: 45%;
+                position: absolute;
+                left: -20px;
+                top: 40px;
+            }
+        }
+
+        &-image {
+            align-self: center;
+            width: 80%;
+
+            @media screen and (min-width: 600px) {
+
+                position: absolute;
+                top: 105px;
+
+            }
+        }
+
+        &-close {
+            border: none;
+            background-color: transparent;
+
+            @media screen and (min-width: 600px) {
+                width: 45%;
+                position: absolute;
+                top: 45px;
+                right: -40px;
+            }
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(0.9);
+            }
+        }
+
+        &--hide {
+            display: none;
+        }
+
+    }
+
+
+
+}
+
+.game-over {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    .game-over__background {
+        position: relative;
+        background-color: rgb(34, 52, 95);
+        opacity: 0.9;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .game-over__contener {
+        opacity: 1 !important;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+        position: absolute;
+        background: linear-gradient(rgb(146, 145, 145), rgb(191, 190, 190));
+        border-radius: 8px;
+        width: 400px;
+        height: 200px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        font-family: var.$BarlowSemiCondensed;
+
+        .name h2 {
+
+            padding-bottom: 10px;
+            font-size: 2rem;
+        }
+
+        .name h3 {
+
+            font-size: 1.3rem;
+        }
+
+        .yes-or-not-buttons button {
+            width: 110px;
+            height: 30px;
+            margin: 10px;
+            border: none;
+            border-radius: 8px;
+            background-color: white;
+            font-family: var.$BarlowSemiCondensed;
+            text-transform: uppercase;
+
+            &:hover {
+                cursor: pointer;
+                transform: scale(0.95);
+            }
+        }
+    }
+
+}
+
+.show {
+    display: block;
+}
+
+@keyframes shadow {
+    0% {
+        box-shadow: 0 0 0 white;
+    }
+
+    50% {
+        box-shadow: 0 0 100px white;
+    }
+
+    100% {
+        box-shadow: 0 0 0 white;
+    }
+
+}
