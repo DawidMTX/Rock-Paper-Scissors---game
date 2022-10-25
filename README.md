@@ -2,6 +2,9 @@
 
 It's  just a simply game in paper rock scissors with counter of score. The user is playing against the computer.
 
+### Links
+
+- Live Site URL: [Add live site URL here](https://dawidmtx.github.io/Rock-Paper-Scissors---game/)
 
 
 ## Techonogies
